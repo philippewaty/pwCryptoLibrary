@@ -14,6 +14,10 @@ namespace ConsoleApp1
             string RSAPublicKey = "";
             string RSAPrivateKey = "";
 
+            Console.WriteLine("Text to crypt");
+            Console.WriteLine(textToEncrypt);
+            Console.WriteLine("");
+
             Console.WriteLine("AES");
             Console.WriteLine("---");
             cryptedText = CryptoService.Encrypt(CryptoService.CryptoServiceEnum.AES, passPhrase, textToEncrypt);

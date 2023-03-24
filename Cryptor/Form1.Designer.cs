@@ -38,11 +38,11 @@ namespace Cryptor
             this.lblDecryptedText = new System.Windows.Forms.Label();
             this.txtDecryptedText = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblAlgorithm = new System.Windows.Forms.Label();
-            this.cboAlgorithms = new System.Windows.Forms.ComboBox();
-            this.btnInitRSAKey = new System.Windows.Forms.Button();
-            this.lblPassphrase = new System.Windows.Forms.Label();
             this.txtPassphrase = new System.Windows.Forms.TextBox();
+            this.lblPassphrase = new System.Windows.Forms.Label();
+            this.btnInitRSAKey = new System.Windows.Forms.Button();
+            this.cboAlgorithms = new System.Windows.Forms.ComboBox();
+            this.lblAlgorithm = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnDecrypt = new System.Windows.Forms.Button();
             this.btnCrypt = new System.Windows.Forms.Button();
@@ -130,25 +130,22 @@ namespace Cryptor
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crypt algorithm";
             // 
-            // lblAlgorithm
+            // txtPassphrase
             // 
-            this.lblAlgorithm.AutoSize = true;
-            this.lblAlgorithm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlgorithm.Location = new System.Drawing.Point(15, 61);
-            this.lblAlgorithm.Name = "lblAlgorithm";
-            this.lblAlgorithm.Size = new System.Drawing.Size(59, 13);
-            this.lblAlgorithm.TabIndex = 2;
-            this.lblAlgorithm.Text = "Algorithm";
+            this.txtPassphrase.Location = new System.Drawing.Point(16, 32);
+            this.txtPassphrase.Name = "txtPassphrase";
+            this.txtPassphrase.Size = new System.Drawing.Size(189, 20);
+            this.txtPassphrase.TabIndex = 1;
             // 
-            // cboAlgorithms
+            // lblPassphrase
             // 
-            this.cboAlgorithms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAlgorithms.FormattingEnabled = true;
-            this.cboAlgorithms.Location = new System.Drawing.Point(18, 86);
-            this.cboAlgorithms.Name = "cboAlgorithms";
-            this.cboAlgorithms.Size = new System.Drawing.Size(189, 21);
-            this.cboAlgorithms.TabIndex = 3;
-            this.cboAlgorithms.SelectedIndexChanged += new System.EventHandler(this.cboAlgorithms_SelectedIndexChanged);
+            this.lblPassphrase.AutoSize = true;
+            this.lblPassphrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassphrase.Location = new System.Drawing.Point(13, 16);
+            this.lblPassphrase.Name = "lblPassphrase";
+            this.lblPassphrase.Size = new System.Drawing.Size(72, 13);
+            this.lblPassphrase.TabIndex = 0;
+            this.lblPassphrase.Text = "Passphrase";
             // 
             // btnInitRSAKey
             // 
@@ -161,22 +158,25 @@ namespace Cryptor
             this.btnInitRSAKey.UseVisualStyleBackColor = true;
             this.btnInitRSAKey.Click += new System.EventHandler(this.btnInitRSAKey_Click);
             // 
-            // lblPassphrase
+            // cboAlgorithms
             // 
-            this.lblPassphrase.AutoSize = true;
-            this.lblPassphrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassphrase.Location = new System.Drawing.Point(13, 16);
-            this.lblPassphrase.Name = "lblPassphrase";
-            this.lblPassphrase.Size = new System.Drawing.Size(72, 13);
-            this.lblPassphrase.TabIndex = 0;
-            this.lblPassphrase.Text = "Passphrase";
+            this.cboAlgorithms.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAlgorithms.FormattingEnabled = true;
+            this.cboAlgorithms.Location = new System.Drawing.Point(18, 86);
+            this.cboAlgorithms.Name = "cboAlgorithms";
+            this.cboAlgorithms.Size = new System.Drawing.Size(189, 21);
+            this.cboAlgorithms.TabIndex = 3;
+            this.cboAlgorithms.SelectedIndexChanged += new System.EventHandler(this.cboAlgorithms_SelectedIndexChanged);
             // 
-            // txtPassphrase
+            // lblAlgorithm
             // 
-            this.txtPassphrase.Location = new System.Drawing.Point(16, 32);
-            this.txtPassphrase.Name = "txtPassphrase";
-            this.txtPassphrase.Size = new System.Drawing.Size(189, 20);
-            this.txtPassphrase.TabIndex = 1;
+            this.lblAlgorithm.AutoSize = true;
+            this.lblAlgorithm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlgorithm.Location = new System.Drawing.Point(15, 61);
+            this.lblAlgorithm.Name = "lblAlgorithm";
+            this.lblAlgorithm.Size = new System.Drawing.Size(59, 13);
+            this.lblAlgorithm.TabIndex = 2;
+            this.lblAlgorithm.Text = "Algorithm";
             // 
             // btnDecrypt
             // 
@@ -216,6 +216,7 @@ namespace Cryptor
             this.Controls.Add(this.lblTextToEncrypt);
             this.Controls.Add(this.lblTitle);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "pwCryptoLibrary Demo";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
