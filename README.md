@@ -36,7 +36,10 @@ Result :
 
 **Important note :**
 
-For RSA, the passphrase is not needed.
-You must generate public and private key before.
-Then, you must send publicKey to encrypt and privateKey to decrypt
+For RSA, the passphrase is not needed using
+```c#
+CryptoService.RSAGenerateKeys
+```
+You must generate public and private key before.  
+Then, you must send publicKey to encrypt and privateKey to decrypt.
 
