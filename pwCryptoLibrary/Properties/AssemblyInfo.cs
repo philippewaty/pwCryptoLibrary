@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("pwCryptoLibrary")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A C# library to encrypt and decrypt data with AES, RSA, TripleDES algorithms.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("pwCryptoLibrary")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright © 2023 Philippe Waty")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>pwCryptoLibrary</id>
+    <version>1.0.0</version>
+    <title>pwCryptoLibrary</title>
+    <authors>Philippe Waty</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/philippewaty/pwCryptoLibrary</projectUrl>
+    <description>A C# library to encrypt and decrypt data with AES, RSA, TripleDES algorithms.</description>
+    <releaseNotes>- 1.0.0 First version 24/03/2023</releaseNotes>
+    <copyright>Copyright © Philippe Waty 2023</copyright>
+    <tags>assembly information</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="lib\net46\pwCryptoLibrary.dll" target="lib\net46\pwCryptoLibrary.dll" />
+  </files>
+</package>
