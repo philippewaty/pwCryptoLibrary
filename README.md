@@ -1,5 +1,5 @@
 # pwCryptoLibrary
-A C# library to encrypt and decrypt data with AES, RSA, TripleDES algorithms.
+A C# library to encrypt and decrypt data with AES, RSA, TripleDES algorithms.  
 
 **How to use :**
 
@@ -41,5 +41,5 @@ You must generate public and private key before using the method
 ```c#
 CryptoService.RSAGenerateKeys
 ```
-Then, you must send publicKey to encrypt and privateKey to decrypt.
+Then, you must send public key to encrypt and private key to decrypt.
 
